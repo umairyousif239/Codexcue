@@ -19,7 +19,7 @@ root.resizable(False, False)
 pygame.mixer.init()
 
 # Variables
-list_of_songs = ['music/Borderline.flac', 'music/Sanctuary.flac', 'music/SLOW DANCING IN THE DARK.flac']
+list_of_songs = ['music/Borderline.mp3', 'music/Sanctuary.mp3', 'music/SLOW DANCING IN THE DARK.mp3']
 list_of_covers = ['img/Borderline.jpg', 'img/Sanctuary.jpg', 'img/SLOW DANCING IN THE DARK.jpg']
 n = 0
 is_paused = False
