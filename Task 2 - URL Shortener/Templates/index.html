@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="mainTab">
+            <h1 class="Title">URL Shortener</h1>
+            <form method="post" action="{{url_for('index')}}" class="form">
+            <input type="url" name="original_url" placeholder="Enter the long URL:" required>
+            <button type="submit">Shorten</button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .mainTab{
+        background-color: rgb(0 87 253 / 11%);
+        backdrop-filter: blur(10px);
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        background-repeat: no-repeat;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        height: 400px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .Title{
+        display: flex;
+        justify-content: center;
+        font-family: "Calistoga", serif;
+        font-weight: 100;
+        font-size: 25px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+
+    input{
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    button{
+        width: 55px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+        font-size: small;
+        padding: 5px 0;
+        border-radius: 15px;
+        border: 1px solid #ccc;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover{
+        background-color: #0056b3;
+        transition: all 0.3s ease 0s;
+    }  
+
+
+</style>
