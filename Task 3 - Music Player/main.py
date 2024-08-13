@@ -38,7 +38,7 @@ def get_album_cover(song_name, n):
     label1.image = load
     label1.place(relx=.19, rely=.06)
 
-    stripped_string = song_name[6:-5]
+    stripped_string = song_name[6:-4]
     song_name_label.configure(text=stripped_string)
 
 def progress():
