@@ -83,9 +83,8 @@ def main():
 
     while True:
         command = listen()
-        triggerKey = "hey assistant"
-
-        if command and triggerKey in command:
+        
+        if command:
             if listening_to_task:
                 tasks.append(command)
                 listening_to_task = False
